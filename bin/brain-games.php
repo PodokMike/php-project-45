@@ -17,5 +17,5 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-greeting();
-evenGame();
+
+evenGame(greeting());
