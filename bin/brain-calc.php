@@ -3,7 +3,7 @@
 <?php
 
 require_once "src/Cli.php";
-require_once "src/Calc.php";
+require_once "src/Games/Calc.php";
 
 use function BrainGames\Cli\greeting;
 use function BrainGames\Calc\calc;
@@ -17,4 +17,4 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-calc();
+calc(greeting());
